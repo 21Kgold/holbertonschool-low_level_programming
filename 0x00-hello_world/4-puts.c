@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - char and puts use
- * return: value of main (0)
+ * Return: value of main (0)
  */
 int main(void)
 {
