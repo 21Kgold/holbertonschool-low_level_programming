@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * mani - printf us
+ * main - printf test
  * Return: 0
  */
 int main(void)
