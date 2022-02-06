@@ -1,4 +1,4 @@
-#include <studio>
+#include <studio.h>
 /**
  * mani - printf us
  * Return: 0
