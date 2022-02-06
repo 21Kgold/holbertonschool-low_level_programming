@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
- * puts function exercise
  * main function: char and puts use
- * return (0)
+ * return value of main (0)
  */
 int main(void)
 {
