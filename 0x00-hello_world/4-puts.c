@@ -1,9 +1,8 @@
-
 #include <stdio.h>
-int main (void)
 /* puts funtion */
+int main (void)
 {
-        char str[];
-        puts(str);  "/"Programming is like building a multilingual puzzle";
-        return 0;
+	char str[] = "/"Programming is like building a multilingual puzzle";
+	puts(str);
+	return 0;
 }
