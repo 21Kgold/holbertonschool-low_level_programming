@@ -6,11 +6,15 @@
  */
 int main(void)
 {
-	int dg;
+    char dg;
 
-	for (dg = '0x' ; dg <= 'Fx' ; dg++)
+	for (dg = '0' ; dg <= '0' ; dg++)
 	{
 		putchar(dg);
+	}
+	for (dg = 'a' ; dg <= 'f' ; dg++)
+	{
+		putchar (dg);
 	}
 	putchar ('\n');
 	return (0);
