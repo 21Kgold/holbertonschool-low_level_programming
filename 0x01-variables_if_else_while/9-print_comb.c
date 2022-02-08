@@ -10,11 +10,12 @@ int main(void)
 
 	for (dg = '0' ; dg <= '9' ; dg++)
 	{
-		putchar("0%d", dg);
-	}
-	for (dg = '10' ; dg <= '99' ; dg++)
+		putchar(dg);
+		if (dg != '9')
 	{
-		putchar (dg);
+		putchar (',');
+		putchar (' ');
+	}
 	}
 	putchar ('\n');
 	return (0);
