@@ -8,7 +8,7 @@ int main(void)
 {
 	char dg;
 
-	for (dg = '0' ; dg <= '9' ; ch++)
+	for (dg = '0' ; dg <= '9' ; dg++)
 	{
 		putchar(dg);
 	}
