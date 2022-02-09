@@ -3,7 +3,6 @@
 /**
  * _islower - entry point
  * @c: char type letter
-
  * Return: return 1 if c is lowercase, 0 otherwise
  */
 int _islower(int c)
