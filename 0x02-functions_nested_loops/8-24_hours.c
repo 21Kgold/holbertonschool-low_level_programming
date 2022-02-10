@@ -5,13 +5,13 @@
  * Return: zero
  */
 void jack_bauer(void)
-{	
+{
 	int a = 0;
 	int b = 0;
 	int d = 0;
 	int e = 0;
-	
-for (a = '0' ; a < '3' ; a++)
+
+	for (a = '0' ; a < '3' ; a++)
 	{
 		for (b = '0' ; b <= '9' ; b++)
 		{
