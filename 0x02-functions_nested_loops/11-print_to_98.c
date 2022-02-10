@@ -9,16 +9,16 @@ void print_to_98(int n)
 {
 	if (n < 98)
 	{
-		int a
-		for (a = n ; a <= '98' ; a++)
+		int a;
+		for (a = n ; a <= 98 ; a++)
 		{
 			printf(a);
 		}
 	}
 	if (n >= 98)
 	{
-		int a
-		for (a = 98 ; a >= '98' ; a--)
+		int a;
+		for (a = n ; a >= 98 ; a--)
 		{
 			printf(a);
 		}
