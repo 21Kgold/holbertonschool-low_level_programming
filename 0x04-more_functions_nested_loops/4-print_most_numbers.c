@@ -1,4 +1,3 @@
-File Edit Options Buffers Tools C Help
 #include "main.h"
 
 /**
@@ -7,14 +6,14 @@ File Edit Options Buffers Tools C Help
  */
 void print_most_numbers(void)
 {
-        int n;
+	int n;
 
-        for (n = 48 ; n > 47 && n < 58 ; n++)
-        {
-                if (n != 50 && n != 52)
-                {
-                        _putchar(n);
-                }
-        }
-        _putchar('\n');
+	for (n = 48 ; n > 47 && n < 58 ; n++)
+	{
+		if (n != 50 && n != 52)
+		{
+			_putchar(n);
+		}
+	}
+	_putchar('\n');
 }
