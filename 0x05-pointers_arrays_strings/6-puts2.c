@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * puts2 - prints every other character of a string, followed by a new line
-* @*str: char
+* @str: char
 * Return: void
 */
 
@@ -13,7 +13,7 @@ void puts2(char *str)
 	{
 	}
 	b = a;
-	for (b = 0 ; b < a ; b+=2)
+	for (b = 0 ; b < a ; b += 2)
 	{
 		_putchar(str[b]);
 	}
