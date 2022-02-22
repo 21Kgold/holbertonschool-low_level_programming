@@ -10,21 +10,26 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int i, j, k;
-
+	
 	k = 0;
-	for (i = 0 ; accept[i] >= '\0' ; i++)
+
+	for (i = 0 ; accept[i] != '\0' ; i++)
 	{
-		for (j = 0 ; s[j] >= '\0' ; j++)
+		for (j = 0 ; s [j] != '\0' ; j++)
 		{
-			if (s[j] == accept[i])
+			if (s[j] == accept [i])
 			{
 				k = k + 1;
 				break;
 			}
 		}
-		if (s[j] == '\0' && accept[i] == '\0')
+	}
+	for (i = 0 ; accept[i] >= '\0' ; i++)
+	{
+		if (accept[i] == '\0')
 		{
-			break;
+			k = k + 1;
+			return (k);
 		}
 	}
 	return (k);
