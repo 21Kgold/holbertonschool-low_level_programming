@@ -21,9 +21,14 @@ unsigned int _strspn(char *s, char *accept)
 				k = k + 1;
 				break;
 			}
+			if (s[j] == '\0' && accept [i] == '\0')
+			{
+				k = k + 1;
+				break;
+			}
 			
 		}
 	
 	}
-	return (k + 1);
+	return (k);
 }
