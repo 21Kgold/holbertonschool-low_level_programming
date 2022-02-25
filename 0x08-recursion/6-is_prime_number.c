@@ -2,7 +2,7 @@
 /**
  * prime_test - finds if a number is a prime.
  * @n: int
- * @i: int
+ * @divisor: int
  * Return: int, 1 if the input integer is a prime number, otherwise return 0
  */
 int prime_test(int n, int divisor)
