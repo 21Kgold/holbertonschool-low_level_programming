@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 /**
  * main - adds positive numbers
  * assume that the add numbers and result can be stored in an integer
@@ -12,25 +14,23 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, j;
-	int k = 0;
+	int x = 0, i, j;
 
-	if (argc == 1)
+	for (i = 1; i < argc; i++)
 	{
-		printf("0\n");
-	}
-	for (i = 1 ; i < argc ; i++)
-	{
-		for (j = 0 ; argv[i][j] ; j++)
+		for (j = 0; argv[i][j]; j++)
 		{
-			if ((argv[i][j]) <= 47 && (argv[i][j]) >= 58)
+			if (isdigit(argv[i][j]) == 0)
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
-		k += atoi(argv[i]);
 	}
-	printf("%i\n", k);
+	for (i = 1; i < argc; i++)
+	{
+		x += atoi(argv[i]);
+	}
+	printf("%d\n", x);
 	return (0);
 }
