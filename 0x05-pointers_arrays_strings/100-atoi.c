@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* int _atoi - convert a string to an integer, take into account - and + signs
+* _atoi - convert a string to an integer, take into account - and + signs
 * @s: char string that will be converted
 * Return: The converted value, or 0 If there are no numbers in the string
 */
