@@ -12,7 +12,7 @@ char *_strdup(char *str)
 	int i, size;
 	char *array;
 
-	for (size = 0 ; str[size] != '\0' ; size++)
+	for (size = 0 ; str[size] != '\0' ; ++size)
 	{
 	}
 	if (size < 1)
