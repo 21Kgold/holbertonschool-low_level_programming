@@ -6,7 +6,7 @@
  * @name: char variable
  * @age: float variable
  * @owner: char variable
- * Description: creates a new dog of type dog_t
+ * Return: new dog of type dog_t
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -24,9 +24,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog->owner = malloc(owner_size * sizeof(char));
 	if (dog == NULL || dog->name == NULL || dog->owner == NULL)
 	{
-		free(dog);
-		free(dog->name);
 		free(dog->owner);
+		free(dog->name);
+		free(dog);
 		return (NULL);
 	}
 	else
