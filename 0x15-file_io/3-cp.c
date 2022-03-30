@@ -7,8 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int fd_from, fd_to, nw_to, i;
-	ssize_t nr_from;
+	int fd_from, fd_to, nw_to, nr_from, i, k;
 	char *ptr;
 
 	if (argc != 3)
@@ -45,6 +44,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
+	k = nr_from;
 	for ( ; nr_from > 0 ;)
 	{
 		nw_to = write(fd_to, ptr, nr_from);
@@ -54,12 +54,14 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 		nr_from = read(fd_from, ptr, 1024);
+		k += nr_from;
 		if (nr_from < 0)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 		}
 	}
+	nr_from = k;
 	i = close(fd_from);
 	if (i == -1)
 	{
