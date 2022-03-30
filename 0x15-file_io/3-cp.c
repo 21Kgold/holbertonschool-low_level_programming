@@ -7,7 +7,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int fd_from, fd_to, nr_from, nw_to, i;
+	int fd_from, fd_to, nw_to, i;
+	ssize_t nr_from;
 	char *ptr;
 
 	if (argc != 3)
