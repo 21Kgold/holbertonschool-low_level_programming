@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	}
 	if (argv[1] == NULL)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %p\n", argv[1]);
 		exit(98);
 	}
 	fd_from = open(argv[1], O_RDONLY);
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	nr_from = read(fd_from, ptr, 1024);
-	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd_from == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write %s\n", argv[2]);
