@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	}
 	if (argv[1] == NULL)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %p\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	fd_from = open(argv[1], O_RDONLY);
