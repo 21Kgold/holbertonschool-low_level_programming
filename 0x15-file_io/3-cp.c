@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 	}
 	nr_from = read(fd_from, ptr, 1024);
 	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	if (fd_to == -1)
+	if (fd_to < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 	for ( ; nr_from > 0 ;)
 	{
 		nw_to = write(fd_to, ptr, nr_from);
-		if (nw_to == -1)
+		if (nw_to < 0)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
