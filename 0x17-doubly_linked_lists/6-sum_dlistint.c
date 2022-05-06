@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * add_dnodeint - returns the sum of all the data (n) of a double linked list
+ * sum_dlistint - returns the sum of all the data (n) of a double linked list
  * @head: head of list
- * Return: returns a pointer to the nth node of a dlistint_t linked list
+ * Return: returns the result of the sum of all the n data
  */
 int sum_dlistint(dlistint_t *head)
 {
