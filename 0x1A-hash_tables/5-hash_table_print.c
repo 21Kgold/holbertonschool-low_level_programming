@@ -9,6 +9,10 @@ void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i, j = 0;
 
+	if (ht == NULL || ht->size == 0)
+	{
+		return;
+	}
 	printf("{");
 	if (ht != NULL || ht->size != 0)
 	{
